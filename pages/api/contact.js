@@ -14,6 +14,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export default function handler(req, res) {
+  console.log(req.body);
   const mailData = {
     from: "FranciscoAlvarezRaineri@gmail.com",
     to: "FranciscoAlvarezRaineri@gmail.com",
