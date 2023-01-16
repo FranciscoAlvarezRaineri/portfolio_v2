@@ -4,16 +4,16 @@ const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [isRobot, setIsRobot] = useState(false);
+  //const [isRobot, setIsRobot] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
-    if (!isRobot) {
+    /*if (!isRobot) {
       return alert(
         "You are a robot! Don't be sending me no Emails, you rusty robot!"
       );
-    }
+    }*/
     fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -36,7 +36,7 @@ const Form = () => {
   return (
     <form
       onSubmit={(e) => sendEmail(e)}
-      disable={submitted}
+      disable={submitted.toString()}
       className="flex items-center flex-col leading-loose text-lg font-mono py-4"
     >
       <div className="text-center m-2">

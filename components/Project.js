@@ -5,7 +5,7 @@ const Project = ({ project }) => {
     project;
   return (
     <div className="flex items-center justify-items-center shadow-md shadow-gray-400">
-      <div className="md:basis-1/3 basis-1/2 w-auto m-4 shadow-md shadow-gray-800 rounded-3xl aspect-video">
+      <div className="md:basis-1/3 basis-1/2 w-auto m-4 shadow-md shadow-gray-400 rounded-3xl">
         <a href={live ? live : repo} target="blank">
           <img
             src={imgs}
@@ -14,7 +14,7 @@ const Project = ({ project }) => {
           ></img>
         </a>
       </div>
-      <div className="md:basis-2/3 basis-1/2 flex content-between md:flex-row flex-col">
+      <div className="md:basis-2/3 basis-1/2 flex content-between md:flex-row flex-col ">
         <div className="basis-1/2 m-4">
           <h1 className="text-2xl leading-loose">{title}</h1>
           <h1 className="text-xl leading-loose">{subTitle}</h1>

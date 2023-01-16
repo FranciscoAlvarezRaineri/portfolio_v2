@@ -14,6 +14,14 @@ const Landing = () => {
         <h1 className="text-gray-200 font-mono text-3xl text-center m-4">
           Welcome to my Portfolio!
         </h1>
+        <h1 className="text-gray-200 font-mono text-3xl text-center m-4">
+          <span className="text-red-800">Please beware! </span> <br></br>
+          <span className="text-yellow-500"> Site under construction</span>,
+          <br></br>
+          continue at your own risk...
+          <br></br>
+          <span className="text-xl">😂 😂 😂</span>
+        </h1>
       </div>
       <div className="md:basis-1/3 basis-full flex justify-center items-center">
         <img

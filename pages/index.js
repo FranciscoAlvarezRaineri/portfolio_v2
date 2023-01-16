@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
 import Form from "../components/Form";
@@ -16,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Retrato low.png" />
       </Head>
-      <main className="bg-gray-200 text-gray-800">
+      <main className="bg-gray-200 text-gray-600">
         <Landing></Landing>
         <NavBar></NavBar>
         <div id="projects" className="h-12"></div>
